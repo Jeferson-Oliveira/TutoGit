@@ -39,4 +39,26 @@
 \outl0\strokewidth0 \strokec3 git add
 \f2 \cf5 \cb6 \strokec5 \'a0(\'e9 um comando com v\'e1rias fun\'e7\'f5es \'97 voc\'ea o utiliza para monitorar novos arquivos, selecionar arquivos, e para fazer outras coisas como marcar como resolvido aquivos com conflito)\
 \
-Obs: se ap\'f3s rodar este comando houver a necessidade de modificar o arquivo antes do commit ser\'e1 necess\'e1rio roda-lo novamente, caso n\'e3o seja feito a vers\'e3o que ser\'e1 commitada ser\'e1 a do ultimo git add}
+Obs: se ap\'f3s rodar este comando houver a necessidade de modificar o arquivo antes do commit ser\'e1 necess\'e1rio roda-lo novamente, caso n\'e3o seja feito a vers\'e3o que ser\'e1 commitada ser\'e1 a do ultimo git add\
+\
+* Ignorando arquivos\
+\
+\'e9 utilizado o arquivo .gitgnore\
+\
+// Segue o exemplo\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf3 \cb4 \strokec3 # um coment\'e1rio - isto \'e9 ignorado\
+# sem arquivos terminados em .a\
+*.a\
+# mas rastreie lib.a, mesmo que voc\'ea tenha ignorado arquivos terminados em .a acima\
+!lib.a\
+# apenas ignore o arquivo TODO na raiz, n\'e3o o subdiret\'f3rio TODO\
+/TODO\
+# ignore todos os arquivos no diret\'f3rio build/\
+build/\
+# ignore doc/notes.txt mas, n\'e3o ignore doc/server/arch.txt\
+doc/*.txt\
+\
+}
