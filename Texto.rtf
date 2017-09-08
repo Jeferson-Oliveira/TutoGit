@@ -1,12 +1,10 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 Georgia;
-\f3\fnil\fcharset0 Georgia-Bold;\f4\fnil\fcharset0 Menlo-Regular;}
+\f3\fnil\fcharset0 Menlo-Regular;}
 {\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red234\green54\blue39;\red255\green255\blue255;
-\red61\green52\blue46;\red251\green251\blue249;\red61\green52\blue46;\red251\green251\blue249;\red0\green0\blue0;
-\red255\green255\blue255;}
+\red61\green52\blue46;\red251\green251\blue249;\red0\green0\blue0;\red255\green255\blue255;}
 {\*\expandedcolortbl;;\csgenericrgb\c100000\c0\c0;\cssrgb\c94510\c30588\c19608;\cssrgb\c100000\c100000\c100000;
-\cssrgb\c30588\c26667\c23529;\cssrgb\c98824\c98824\c98039;\cssrgb\c30588\c26667\c23529;\cssrgb\c98824\c98824\c98039;\csgray\c0;
-\csgray\c100000;}
+\cssrgb\c30588\c26667\c23529;\cssrgb\c98824\c98824\c98039;\csgray\c0;\csgray\c100000;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -46,8 +44,8 @@
 \pard\pardeftab720\sl360\partightenfactor0
 
 \f1\fs28 \cf3 \cb4 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec3 git add
-\f2 \cf5 \cb6 \strokec5 \'a0(\'e9 um comando com v\'e1rias fun\'e7\'f5es \'97 voc\'ea o utiliza para monitorar novos arquivos, selecionar arquivos, e para fazer outras coisas como marcar como resolvido aquivos com conflito)\
+git add
+\f2 \cf5 \cb6 \'a0(\'e9 um comando com v\'e1rias fun\'e7\'f5es \'97 voc\'ea o utiliza para monitorar novos arquivos, selecionar arquivos, e para fazer outras coisas como marcar como resolvido aquivos com conflito)\
 \
 Obs: se ap\'f3s rodar este comando houver a necessidade de modificar o arquivo antes do commit ser\'e1 necess\'e1rio roda-lo novamente, caso n\'e3o seja feito a vers\'e3o que ser\'e1 commitada ser\'e1 a do ultimo git add\
 \
@@ -61,7 +59,7 @@ Obs: se ap\'f3s rodar este comando houver a necessidade de modificar o arquivo a
 \
 \pard\pardeftab720\sl320\partightenfactor0
 
-\f1 \cf3 \cb4 \strokec3 # um coment\'e1rio - isto \'e9 ignorado\
+\f1 \cf3 \cb4 # um coment\'e1rio - isto \'e9 ignorado\
 # sem arquivos terminados em .a\
 *.a\
 # mas rastreie lib.a, mesmo que voc\'ea tenha ignorado arquivos terminados em .a acima\
@@ -75,7 +73,7 @@ doc/*.txt\
 \
 \pard\pardeftab720\sl360\partightenfactor0
 
-\f2\b \cf7 \cb8 \outl0\strokewidth0 * Commitando altera\'e7\'f5es\
+\f2\b \cf5 \cb6 * Commitando altera\'e7\'f5es\
 \
 
 \b0 Ap\'f3s selecionar todas as altera\'e7\'f5es (git add) ser\'e1 necess\'e1rio comita-las, para isso execute o comando\
@@ -94,20 +92,21 @@ argumento -a  (git commit -a -m \'93[Mensagem]\'94) que ele adicionar\'e1 todos 
 
 \b * Removendo arquivos
 \b0 \
+\pard\pardeftab720\sl360\partightenfactor0
 
-\f3\b\fs32 \cf5 \cb6 \outl0\strokewidth0 \strokec5 \
+\b\fs32 \cf5 \
 \pard\pardeftab720\sl440\sa220\partightenfactor0
 
-\f2\b0\fs28 \cf5 Para remover um arquivo do Git, voc\'ea tem que remov\'ea-lo dos arquivos que est\'e3o sendo monitorados (mais precisamente, remov\'ea-lo da sua \'e1rea de sele\'e7\'e3o) e ent\'e3o fazer o commit. O comando\'a0
-\f1 \cf3 \cb4 \strokec3 git rm
-\f2 \cf5 \cb6 \strokec5 \'a0faz isso e tamb\'e9m remove o arquivo do seu diret\'f3rio para voc\'ea n\'e3o ver ele como arquivo n\'e3o monitorado (untracked file) na pr\'f3xima vez.\
+\b0\fs28 \cf5 Para remover um arquivo do Git, voc\'ea tem que remov\'ea-lo dos arquivos que est\'e3o sendo monitorados (mais precisamente, remov\'ea-lo da sua \'e1rea de sele\'e7\'e3o) e ent\'e3o fazer o commit. O comando\'a0
+\f1 \cf3 \cb4 git rm
+\f2 \cf5 \cb6 \'a0faz isso e tamb\'e9m remove o arquivo do seu diret\'f3rio para voc\'ea n\'e3o ver ele como arquivo n\'e3o monitorado (untracked file) na pr\'f3xima vez.\
 \
 * Hist\'f3rio de Commits \
 git log\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f4\fs22 \cf9 \cb10 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 git log --pretty=oneline\
+\f3\fs22 \cf7 \cb8 \kerning1\expnd0\expndtw0 \CocoaLigature0 git log --pretty=oneline\
 \
 * Desfazendo as coisas\
 \
@@ -116,5 +115,19 @@ Para editar um commit anterior basta executar o comando:\
 git commit --amend -m "Desfazendo as coisas" \
 
 \f2\fs28 \cf5 \cb6 \expnd0\expndtw0\kerning0
-\CocoaLigature1 \outl0\strokewidth0 \strokec5 \
-}
+\CocoaLigature1 \
+* Desfazendo as coisas (workcopy - staged)\
+\
+para remover um arquivo do status de staged para untaged basta executar este comando\
+\
+git reset HEAD [arquivo]\
+\
+para restaurar o arquivo para o ultimo commit basta executar este comando\
+\
+git checkout [arquivo]\
+\
+\
+logo, para restaurar um arquivo que j\'e1 foi adicionado ao Staged para o index \'e9 necess\'e1rio realizar estes dois comandos \
+\
+git reset Head [arquivo] - remove o mesmo do estado de staged para unstaged\
+git checkout [arquivo] - restaura o arquivo para o ultimo commit }
