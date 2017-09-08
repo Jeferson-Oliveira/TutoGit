@@ -1,29 +1,28 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 Georgia;
-\f3\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red234\green54\blue39;\red255\green255\blue255;
-\red61\green52\blue46;\red251\green251\blue249;\red0\green0\blue0;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\csgenericrgb\c100000\c0\c0;\cssrgb\c94510\c30588\c19608;\cssrgb\c100000\c100000\c100000;
-\cssrgb\c30588\c26667\c23529;\cssrgb\c98824\c98824\c98039;\csgray\c0;\csgray\c100000;}
+{\fonttbl\f0\fnil\fcharset0 Georgia;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red63\green63\blue63;\red255\green255\blue255;\red251\green251\blue249;
+\red255\green255\blue255;\red61\green52\blue46;\red251\green251\blue249;\red234\green54\blue39;\red255\green255\blue255;
+}
+{\*\expandedcolortbl;;\csgray\c31453;\cssrgb\c100000\c100000\c100000;\cssrgb\c98824\c98824\c98039;
+\csgray\c100000;\cssrgb\c30588\c26667\c23529;\cssrgb\c98824\c98824\c98039;\cssrgb\c94510\c30588\c19608;\cssrgb\c100000\c100000\c100000;
+}
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 Ol\'e1 \
+\f0\fs28 \cf2 Ol\'e1 \
 \
 para cada comando poder\'e1 ser executado o comando git [comando] \'97help para obter mais informa\'e7\'f5es sobre o mesmo\
 \
-\
 
-\b * Inicializando um reposit\'f3rio local
+\b \
+* Inicializando um reposit\'f3rio local
 \b0 \
 \
-\cf2 git init \cf0 \
+git init \
 \
-
-\b * Clonando um reposit\'f3rio
-\b0 \
+* Clonando um reposit\'f3rio\
 \
-\cf2 git clone [URL] ?[Dir]\cf0 \
+git clone [URL] ?[Dir]\
 \
 
 \b * Cliclo de Vida dos arquivos
@@ -34,35 +33,34 @@ para cada comando poder\'e1 ser executado o comando git [comando] \'97help para 
 - modifield\
 - staged\
 \
-* Para verificar qual status dos arquivos \
-\
-\cf2 git status\cf0 \
 
-\b \
-* Para colocar um arquivo do status de monitorado\
-
+\b * Para verificar qual status dos arquivos 
 \b0 \
-\cf2 git add [Arq]\cf0 \
+\
+git status\
+\
+
+\b * Para colocar um arquivo do status de monitorado
+\b0 \
+\
+git add [Arq]\
 \
 \pard\pardeftab720\sl360\partightenfactor0
-
-\f1\fs28 \cf3 \cb4 \expnd0\expndtw0\kerning0
-git add
-\f2 \cf5 \cb6 \'a0(\'e9 um comando com v\'e1rias fun\'e7\'f5es \'97 voc\'ea o utiliza para monitorar novos arquivos, selecionar arquivos, e para fazer outras coisas como marcar como resolvido aquivos com conflito)\
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+git add\cb4 \'a0(\'e9 um comando com v\'e1rias fun\'e7\'f5es \'97 voc\'ea o utiliza para monitorar novos arquivos, selecionar arquivos, e para fazer outras coisas como marcar como resolvido aquivos com conflito)\
 \
 Obs: se ap\'f3s rodar este comando houver a necessidade de modificar o arquivo antes do commit ser\'e1 necess\'e1rio roda-lo novamente, caso n\'e3o seja feito a vers\'e3o que ser\'e1 commitada ser\'e1 a do ultimo git add\
 \
 
-\b * Ignorando arquivos
+\b * Ignorando arquivos\
+
 \b0 \
-\
 \'e9 utilizado o arquivo .gitgnore\
 \
 // Segue o exemplo\
 \
 \pard\pardeftab720\sl320\partightenfactor0
-
-\f1 \cf3 \cb4 # um coment\'e1rio - isto \'e9 ignorado\
+\cf2 \cb3 # um coment\'e1rio - isto \'e9 ignorado\
 # sem arquivos terminados em .a\
 *.a\
 # mas rastreie lib.a, mesmo que voc\'ea tenha ignorado arquivos terminados em .a acima\
@@ -76,10 +74,10 @@ doc/*.txt\
 \
 \pard\pardeftab720\sl360\partightenfactor0
 
-\f2\b \cf5 \cb6 * Commitando altera\'e7\'f5es\
+\b \cf2 \cb4 * Commitando altera\'e7\'f5es
+\b0 \
 \
-
-\b0 Ap\'f3s selecionar todas as altera\'e7\'f5es (git add) ser\'e1 necess\'e1rio comita-las, para isso execute o comando\
+Ap\'f3s selecionar todas as altera\'e7\'f5es (git add) ser\'e1 necess\'e1rio comita-las, para isso execute o comando\
 \
 git commit -m \'93[Mensagem]\'94 \
 \
@@ -95,31 +93,27 @@ argumento -a  (git commit -a -m \'93[Mensagem]\'94) que ele adicionar\'e1 todos 
 
 \b * Removendo arquivos
 \b0 \
-\pard\pardeftab720\sl360\partightenfactor0
-
-\b\fs32 \cf5 \
+\
 \pard\pardeftab720\sl440\sa220\partightenfactor0
-
-\b0\fs28 \cf5 Para remover um arquivo do Git, voc\'ea tem que remov\'ea-lo dos arquivos que est\'e3o sendo monitorados (mais precisamente, remov\'ea-lo da sua \'e1rea de sele\'e7\'e3o) e ent\'e3o fazer o commit. O comando\'a0
-\f1 \cf3 \cb4 git rm
-\f2 \cf5 \cb6 \'a0faz isso e tamb\'e9m remove o arquivo do seu diret\'f3rio para voc\'ea n\'e3o ver ele como arquivo n\'e3o monitorado (untracked file) na pr\'f3xima vez.\
+\cf2 Para remover um arquivo do Git, voc\'ea tem que remov\'ea-lo dos arquivos que est\'e3o sendo monitorados (mais precisamente, remov\'ea-lo da sua \'e1rea de sele\'e7\'e3o) e ent\'e3o fazer o commit. O comando\'a0\cb3 git rm\cb4 \'a0faz isso e tamb\'e9m remove o arquivo do seu diret\'f3rio para voc\'ea n\'e3o ver ele como arquivo n\'e3o monitorado (untracked file) na pr\'f3xima vez.\
 \
-* Hist\'f3rio de Commits \
+
+\b * Hist\'f3rio de Commits 
+\b0 \
 git log\
-\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f3\fs22 \cf7 \cb8 \kerning1\expnd0\expndtw0 \CocoaLigature0 git log --pretty=oneline\
+\cf2 \cb5 \kerning1\expnd0\expndtw0 \CocoaLigature0 git log --pretty=oneline\
 \
 * Desfazendo as coisas\
 \
 Para editar um commit anterior basta executar o comando:\
 \
 git commit --amend -m "Desfazendo as coisas" \
-
-\f2\fs28 \cf5 \cb6 \expnd0\expndtw0\kerning0
+\cb4 \expnd0\expndtw0\kerning0
 \CocoaLigature1 \
-* Desfazendo as coisas (workcopy - staged)\
+
+\b * Desfazendo as coisas (workcopy - staged)
+\b0 \
 \
 para remover um arquivo do status de staged para untaged basta executar este comando\
 \
@@ -135,7 +129,9 @@ logo, para restaurar um arquivo que j\'e1 foi adicionado ao Staged para o index 
 git reset Head [arquivo] - remove o mesmo do estado de staged para unstaged\
 git checkout [arquivo] - restaura o arquivo para o ultimo commit \
 \
-*Trabalhando com remotos\
+
+\b *Trabalhando com remotos
+\b0 \
 \
 para visualizar os servidores remotos execute o comando \
 \
@@ -151,4 +147,38 @@ git remote remove [apelido]\
 \
 para informa\'e7\'f5es sobre o remoto execute \
 \
-git remote show [apelido]}
+git remote show [apelido]\
+
+\b \
+* Tagging
+\b0 \
+\
+para listar as tags execute \
+\
+git tag\
+\
+para uma s\'e9ria espec\'edfica pode ser usado o \
+\
+git tag \'931.1.*\'94\
+\
+tags  leves e anotadas \
+\
+- leves - funcionam como uma branch\
+	comando git tag [v0.1] -m \'93[Mensagem]\'94\
+- anotadas - guarda informa\'e7\'f5es como data, email , quem fez a tag etc\
+	comando git tag -a [v1.0] -m \'93[mensagem]\'94\
+\
+para exibir informa\'e7\'f5es sobre a tag execute \
+\
+git show  [tagname]\
+\
+para inserir um tag em um commit anterior basta executar o comando \
+\
+git tag -a [v1.0.2] [chavecomit] -m \'93[mensagem]\'94\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf6 \cb7 \outl0\strokewidth0 \strokec6 Obs: Por padr\'e3o, o comando\'a0
+\f1 \cf8 \cb9 \strokec8 git push
+\f0 \cf6 \cb7 \strokec6 \'a0n\'e3o transfere tags para os servidores remotos. Voc\'ea deve enviar as tags explicitamente para um servidor compartilhado ap\'f3s t\'ea-las criado. Este processo \'e9 igual ao compartilhamento de branches remotos \'96 voc\'ea executa\'a0
+\f1 \cf8 \cb9 \strokec8 git push origin [nome-tag]
+\f0 \cf6 \cb7 \strokec6 .}
